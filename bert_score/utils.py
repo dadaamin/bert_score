@@ -38,6 +38,7 @@ lang2model.update(
 
 
 model2layers = {
+    "emilyalsentzer/Bio_ClinicalBERT": 9,
     "bert-base-uncased": 9,  # 0.6925188074454226
     "bert-large-uncased": 18,  # 0.7210358126642836
     "bert-base-cased-finetuned-mrpc": 9,  # 0.6721947475618048
