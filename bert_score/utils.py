@@ -198,7 +198,7 @@ def sent_encode(tokenizer, sent):
                 sent,
                 add_special_tokens=True,
                 add_prefix_space=True,
-                max_length=tokenizer.model_max_length,
+                max_length=512,
                 truncation=True,
             )
         elif version.parse(trans_version) >= version.parse("3.0.0"):
@@ -225,7 +225,7 @@ def sent_encode(tokenizer, sent):
             return tokenizer.encode(
                 sent,
                 add_special_tokens=True,
-                max_length=tokenizer.model_max_length,
+                max_length=512,
                 truncation=True,
             )
         elif version.parse(trans_version) >= version.parse("3.0.0"):
